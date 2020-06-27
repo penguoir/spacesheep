@@ -1,0 +1,14 @@
+{
+  "presets": ["next/babel", "@emotion/babel-preset-css-prop"],
+  "plugins": [
+    "react-require",
+    "babel-plugin-macros",
+    [
+      "module-resolver",
+      {
+        "root": ["./src/"],
+        "alias": { "~": "./src/components/" }
+      }
+    ]
+  ]
+}
